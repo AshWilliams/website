@@ -1,48 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Felipe Oriani - Software Developer</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
-        <meta name="viewport" content="initial-scale=1.0">
+		<meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0" />
 	</head>
 	<body>
-		
-		<h1>Hello World, I am Felipe Oriani</h1>
-		
-		<div>
+
+		<header>
+			<h1>Hello World, I am Felipe Oriani</h1>				
+		</header>
+			
+		<nav>
             <span id="email">no no no bot, no email for you buddy!</span> |
 			<a href="http://blog.felipeoriani.com">Blog</a> |
-            <a href="http://github.com/felipeoriani">GitHub</a> |
+            <a href="cv.pdf">CV</a> |
+			<a href="cv.pdf">CV Lattes</a> |
+		    <a href="http://github.com/felipeoriani">GitHub</a> |
             <a href="http://twitter.com/felipeoriani">Twitter</a> |
             <a href="http://linkedin.com/in/felipeoriani">LinkedIn</a> |
-            <a href="cv.pdf">CV</a> |
-            <a href="http://facebook.com/felipeoriani">Facebook</a>
-        </div>
+            <a href="http://facebook.com/felipeoriani">Facebook</a>			
+        </nav>
 		
-		<div class="stack">
+		<div>
 			<a href="http://stackoverflow.com/users/316799/felipe-oriani">
 				<img src="http://stackoverflow.com/users/flair/316799.png" width="208" height="58" alt="profile for Felipe Oriani at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Felipe Oriani at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-			</a>			
+			</a>
 		</div>
 		
-		<h2>Who am I?</h2>
+		<hr />
 		
-		<p class="identy">
-			My name is Felipe Oriani, a computer scientist from Brazil living in Piracicaba - SP and a MSc. cadidante in <a href="http://www.ft.unicamp.br">FT/Unicamp</a> in Computer Science - Artificial Intelligence. 		
+		<h2>Who?</h2>
+		
+		<p>
+		My name is Felipe Oriani, a computer scientist from Brazil living in Piracicaba - São Paulo, and a Masters Candidate in <a href="http://www.ft.unicamp.br">FT/Unicamp</a> in Computer Science - Artificial Intelligence (Machine Learning).
+		I am an active user in <a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a> too.
 		</p>
 		
-		<p class="identy">
-			I have been working as a software developer since 2004 and nowadays I work for <a href="http://www.gatec.com.br/">GAtec S/A</a> since 2012 as a software developer/architect building software for Agribusiness area.						
-		</p>	
+		<h2>Work?</h2>
 		
-		<h2>Contact</h2>
+		<p>
+		I have been working as a software developer since 2004 and nowadays I work for <a href="http://www.gatec.com.br/" target="_blank">GAtec S/A</a> as a .Net Developer/Architect building software for Agribusiness area.
+		</p>
+
+		<p>
+		I am currently interested mainly in the .NET platform, but I am open mind and I always want to know the best and the worst of any technology. 
+		My job involves <a href="http://www.confreaks.com/videos/240-goruco2009-solid-object-oriented-design" target="_blank">S.O.L.I.D. principles</a>, software development/architecture, unit testing, <a href="http://martinfowler.com/articles/injection.html" target="_blank">dependency injection and inversion of control</a>, <a href="http://martinfowler.com/eaaCatalog/" target="_blank">design patterns</a>, <a href="http://www.codeproject.com/Articles/22769/Introduction-to-Object-Oriented-Programming-Concep" target="_blank">object oriented programming</a>, etc.
+		</p>
 		
-		<p>contact</p>
-		
+		<h2>Study/Research?</h2>
+
+		<p>
+		I graduated in 2008 with degree in computer science and at the moment, I am doing my masters degree in computer science, because I think it's useful to know what happens under the hood when we use abstractions such as high level programming languages. 
+		I also want to have a chance to pass the knowledge I have gained over the years working as a software developer/architect.
+		</p>
+	
+		<p>
+		My research involves <em>time series prediction</em> using <em>heterogeneous ensembles</em> (artificial neural networks, support vector machine and statistical methods like AR, ARMA, ARIMA etc.), where is been applied for <em>stock trading</em>, but can be applied to other type of time series. 
+		This project is being built in C# language and trying to learn/apply F#. I will open source when I finished it.
+		</p>
+				
+		<hr/ >
 		
 	<script>
-		window.onload = function () {
-			var m = "felipeoriani" + "@@@"[0] + "gmail" + ".com";
+		window.onload = function () {			
+			var m = String.fromCharCode(102, 101, 108, 105, 112, 101, 111, 114, 105, 97, 110, 105, 64, 103, 109, 97, 105, 108, 46, 99, 111, 109);
 			document.getElementById("email").innerHTML = "<a href='mailto:" + m + "'>" + m + "</a>";
 		};
 	</script>
